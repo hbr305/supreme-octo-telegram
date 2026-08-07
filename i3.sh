@@ -25,30 +25,3 @@ cd ~/.system/themes/Orchis-theme/
 ./install.sh -c dark -s compact
 cd ~/.system/themes/papirus-icon-theme/
 ./install.sh
-
-#Polybar
-mv $HOME//polybar ~/.config/
-chmod +x ~/.config/polybar/launch.sh
-
-#Rofi
-mv $HOME//rofi ~/.config/
-
-#Keybindings
-cp $HOME//config ~/.config/i3/config
-rm $HOME//config
-
-#System Setup
-sudo cp $HOME//grub /etc/default/grub
-rm $HOME//grub
-sudo update-grub
-
-#Fastfetch
-sudo apt install fastfetch
-mkdir ~/.config/fastfetch
-curl -sSLo "${HOME}/.config/fastfetch/config.jsonc" https://raw.githubusercontent.com/ChrisTitusTech/mybash/main/config.jsonc
-cp $HOME//bashrc ~/.bashrc
-rm $HOME//bashrc
-
-#Autologin
-sudo cp $HOME//lightdm.conf /etc/lightdm/lightdm.conf
-rm $HOME//lightdm.conf
