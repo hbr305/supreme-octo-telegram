@@ -19,8 +19,8 @@ git clone https://github.com/vinceliuice/Orchis-theme.git && git clone https://g
 mkdir ~/.system
 mkdir ~/.system/wallpapers
 mkdir ~/.system/themes
-mv $HOME//MacTahoe-night.jpeg ~/.system/wallpapers
-mv $HOME//Orchis-theme ~/.system/themes && mv $HOME//papirus-icon-theme ~/.system/themes
+mv $HOME/MacTahoe-night.jpeg ~/.system/wallpapers
+mv $HOME/Orchis-theme ~/.system/themes && mv $HOME/papirus-icon-theme ~/.system/themes
 cd ~/.system/themes/Orchis-theme/
 ./install.sh -c dark -s compact
 cd ~/.system/themes/papirus-icon-theme/
